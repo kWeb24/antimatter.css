@@ -1,0 +1,88 @@
+body { margin: 0 }
+
+*, *:before, *:after { box-sizing: border-box }
+
+.flu { margin: 0 auto; padding: 0 2rem }
+
+.row {
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 -1rem
+}
+
+.row.rev {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  flex-direction: row-reverse
+}
+
+.col.rev {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  flex-direction: column-reverse
+}
+
+.sts { -webkit-box-pack: start; justify-content: flex-start; text-align: start }
+.ces { -webkit-box-pack: center; justify-content: center; text-align: center }
+.ends { -webkit-box-pack: end; justify-content: flex-end; text-align: end }
+.tops { -webkit-box-align: start; align-items: flex-start }
+.mids { -webkit-box-align: center; align-items: center }
+.bots { -webkit-box-align: end; align-items: flex-end }
+.aros { justify-content: space-around }
+.bets { box-pack: justify; justify-content: space-between }
+.firs { -webkit-box-ordinal-group: 0; order: -1 }
+.lass { -webkit-box-ordinal-group: 2; order: 1 }
+
+.col { width: calc(8.33% * var(--x, 12)); margin-left: calc(8.33% * var(--xo, 0)); flex: 0 0 auto; padding: 0 1rem }
+@media screen and (min-width: 768px) {
+  .col { width: calc(8.33% * var(--m)); margin-left: calc(8.33% * var(--mo, 0))}
+  .stm { -webkit-box-pack: start; justify-content: flex-start; text-align: start }
+  .cem { -webkit-box-pack: center; justify-content: center; text-align: center }
+  .endm { -webkit-box-pack: end; justify-content: flex-end; text-align: end }
+  .topm { -webkit-box-align: start; align-items: flex-start }
+  .midm { -webkit-box-align: center; align-items: center }
+  .botm { -webkit-box-align: end; align-items: flex-end }
+  .arom { justify-content: space-around }
+  .betm { box-pack: justify; justify-content: space-between }
+  .firm { -webkit-box-ordinal-group: 0; order: -1 }
+  .lasm { -webkit-box-ordinal-group: 2; order: 1 }
+}
+@media screen and (min-width: 968px) {
+  .col { width: calc(8.33% * var(--l)); margin-left: calc(8.33% * var(--lo, 0))}
+  .stl { -webkit-box-pack: start; justify-content: flex-start; text-align: start }
+  .cel { -webkit-box-pack: center; justify-content: center; text-align: center }
+  .endl { -webkit-box-pack: end; justify-content: flex-end; text-align: end }
+  .topl { -webkit-box-align: start; align-items: flex-start }
+  .midl { -webkit-box-align: center; align-items: center }
+  .botl { -webkit-box-align: end; align-items: flex-end }
+  .arol { justify-content: space-around }
+  .betl { box-pack: justify; justify-content: space-between }
+  .firl { -webkit-box-ordinal-group: 0; order: -1 }
+  .lasl { -webkit-box-ordinal-group: 2; order: 1 }
+}
+
+[s="1"] { --x: 1 } [s="2"] { --x: 2 } [s="3"] { --x: 3 } [s="4"] { --x: 4 }
+[s="5"] { --x: 5 } [s="6"] { --x: 6 } [s="7"] { --x: 7 } [s="8"] { --x: 8 }
+[s="9"] { --x: 9 } [s="10"] { --x: 10 } [s="11"] { --x: 11 } [s="12"] { --x: 12 }
+
+[m="1"] { --m: 1 } [m="2"] { --m: 2 } [m="3"] { --m: 3 } [m="4"] { --m: 4 }
+[m="5"] { --m: 5 } [m="6"] { --m: 6 } [m="7"] { --m: 7 } [m="8"] { --m: 8 }
+[m="9"] { --m: 9 } [m="10"] { --m: 10 } [m="11"] { --m: 11 } [m="12"] { --m: 12 }
+
+[l="1"] { --l: 1 } [l="2"] { --l: 2 } [l="3"] { --l: 3 } [l="4"] { --l: 4 }
+[l="5"] { --l: 5 } [l="6"] { --l: 6 } [l="7"] { --l: 7 } [l="8"] { --l: 8 }
+[l="9"] { --l: 9 } [l="10"] { --l: 10 } [l="11"] { --l: 11 } [l="12"] { --l: 12 }
+
+[so="1"] { --xo: 1 } [so="2"] { --xo: 2 } [so="3"] { --xo: 3 } [so="4"] { --xo: 4 }
+[so="5"] { --xo: 5 } [so="6"] { --xo: 6 } [so="7"] { --xo: 7 } [so="8"] { --xo: 8 }
+[so="9"] { --xo: 9 } [so="10"] { --xo: 10 } [so="11"] { --xo: 11 }
+
+[mo="1"] { --mo: 1 } [mo="2"] { --mo: 2 } [mo="3"] { --mo: 3 } [mo="4"] { --mo: 4 }
+[mo="5"] { --mo: 5 } [mo="6"] { --mo: 6 } [mo="7"] { --mo: 7 } [mo="8"] { --mo: 8 }
+[mo="9"] { --mo: 9 } [mo="10"] { --mo: 10 } [mo="11"] { --mo: 11 }
+
+[lo="1"] { --lo: 1 } [lo="2"] { --lo: 2 } [lo="3"] { --lo: 3 } [lo="4"] { --lo: 4 }
+[lo="5"] { --lo: 5 } [lo="6"] { --lo: 6 } [lo="7"] { --lo: 7 } [lo="8"] { --lo: 8 }
+[lo="9"] { --lo: 9 } [lo="10"] { --lo: 10 } [lo="11"] { --lo: 11 }

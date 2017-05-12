@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<title>Antimatter.css</title>
+		<meta charset="utf-8">
+		<meta description="easyCounter.js v0.2.0"
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+		<link rel="stylesheet" href="assets/styles.css">
+		<link rel="stylesheet" href="assets/highlight.css">
+		<link rel="stylesheet" href="../dist/antimatter.min.css">
+  </head>
+  <body>
+
+		<nav class="col-xs-12">
+			<div class="container">
+				<div class="col-xs-6">
+					<h1>Antimatter<span>.css</span></h1>
+				</div>
+				<div class="col-xs-6">
+					<figure>
+						<a href="http://kamilweber.pl" title="Kamil Weber">
+							<img src="assets/logo.png" alt="Kamil Weber" />
+						</a>
+					</figure>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container">
+			<section id="s1">
+				<article>
+					<h1>You can't create flexbox grid that will be less than 1kb</h1>
+					<h2>Hold my beer</h2>
+
+					<p>
+						Antimatter is fully functional responsive flexbox grid and its only <strong>877 bytes</strong> mimified and gzipped!<br />Compatible with: <strong>IE 11, Firefox 37+, Chrome 42+, Opera 29+, IE Mobile 11, Android Chrome 42+ and Android Firefox 37+!</strong>
+					</p>
+
+					<h2>All the necessary features in less than 1kb!</h2>
+					<p>
+						<ul>
+							<li>
+								12 column flex grid
+							</li>
+							<li>
+								Offsets
+							</li>
+							<li>
+								Positioning:
+								<ul>
+									<li>
+										Start, center, end
+									</li>
+									<li>
+										Top, middle, bottom
+									</li>
+									<li>
+										Around, between
+									</li>
+									<li>
+										First, last
+									</li>
+								</ul>
+							</li>
+							<li>
+								Box-sizing reset
+							</li>
+							<li>
+								Breakpoints: Small, Medium, Large
+							</li>
+						</ul>
+					</p>
+				</article>
+			</section>
+			<section id="s2">
+				<article>
+					<h1>How to</h1>
+					<p>
+						The fundamental difference between Antimatter.css and other frameworks is that you use attributes instead of classes to define columns.
+					</p>
+					<p>
+						Example below will create 3 column grid, with one half-width column and two 1/4 width.
+					</p>
+					<pre><code class="xhtml">
+	&#60;div class="flu"&#62;
+	  &#60;div class="row"&#62;
+	    &#60;div class="col" s="12" m="12" l="6"&#62;
+              &#60;div class="box"&#62;
+              &#60;/div&#62;
+	    &#60;/div&#62;
+	    &#60;div class="col" s="12" m="6" l="3"&#62;
+              &#60;div class="box"&#62;
+              &#60;/div&#62;
+	    &#60;/div&#62;
+	    &#60;div class="col" s="12" m="6" l="3"&#62;
+              &#60;div class="box"&#62;
+              &#60;/div&#62;
+	    &#60;/div&#62;
+	  &#60;/div&#62;
+	&#60;/div&#62;
+					</code></pre>
+				</article>
+			</section>
+
+			<div class="example">
+				<div class="flu">
+					<div class="row">
+						<div class="col" s="12" m="12" l="6">
+							<div class="box">
+							</div>
+						</div>
+						<div class="col" s="12" m="6" l="3">
+							<div class="box">
+							</div>
+						</div>
+						<div class="col" s="12" m="6" l="3">
+							<div class="box">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section id="s3">
+				<article>
+					<h1>Attributes</h1>
+					<h2>Column width</h2>
+					<div class="row-normal">
+						<div>
+							<span class="code">s</span>
+						</div>
+						<div>
+								Number of columns. Small screens. Below 768px
+						</div>
+					</div>
+					<div class="row-normal">
+						<div>
+							<span class="code">m</span>
+						</div>
+						<div>
+								Number of columns. Medium screens. 768px - 986px
+						</div>
+					</div>
+					<div class="row-normal">
+						<div>
+							<span class="code">l</span>
+						</div>
+						<div>
+								Number of columns. Large screens. Above 968px
+						</div>
+					</div>
+					<h2>Offset</h2>
+					<div class="row-normal">
+						<div>
+							<span class="code">so</span>
+						</div>
+						<div>
+								Number of columns. Small screens. Below 768px
+						</div>
+					</div>
+					<div class="row-normal">
+						<div>
+							<span class="code">mo</span>
+						</div>
+						<div>
+								Number of columns. Medium screens. 768px - 986px
+						</div>
+					</div>
+					<div class="row-normal">
+						<div>
+							<span class="code">lo</span>
+						</div>
+						<div>
+								Number of columns. Large screens. Above 968px
+						</div>
+					</div>
+					<h2>Classes (Small, Medium, Large)</h2>
+					<div class="row-normal">
+						<div>
+							<span class="code">flu</span>
+						</div>
+						<div>
+								Fluid container
+						</div>
+					</div>
+					<div class="row-normal">
+						<div>
+							<span class="code">row</span>
+						</div>
+						<div>
+								Row
+						</div>
+					</div>
+					<div class="row-normal">
+						<div>
+							<span class="code">col</span>
+						</div>
+						<div>
+								Column
+						</div>
+					</div>
+					<div class="row-normal">
+						<div>
+							<span class="code">sts, stm, stl</span>
+						</div>
+						<div>
+								Align elements to the start of a row
+						</div>
+					</div>
+					<div class="row-normal">
+						<div>
+							<span class="code">ces, cem, cel</span>
+						</div>
+						<div>
+								Align elements to the center of a row
+						</div>
+					</div>
+					<div class="row-normal">
+						<div>
+							<span class="code">ends, endm, endl</span>
+						</div>
+						<div>
+								Align elements to the end of a row
+						</div>
+					</div>
+					<div class="row-normal">
+						<div>
+							<span class="code">tops, topm, topl</span>
+						</div>
+						<div>
+								Align elements to the top of a row
+						</div>
+					</div>
+					<div class="row-normal">
+						<div>
+							<span class="code">mids, midm, midl</span>
+						</div>
+						<div>
+								Align elements in the middle of a row
+						</div>
+					</div>
+					<div class="row-normal">
+						<div>
+							<span class="code">bots, botm, botl</span>
+						</div>
+						<div>
+								Align elements to the bottom of a row
+						</div>
+					</div>
+					<div class="row-normal">
+						<div>
+							<span class="code">aros, arom, arol</span>
+						</div>
+						<div>
+								Distribute the contents of a row or column around
+						</div>
+					</div>
+					<div class="row-normal">
+						<div>
+							<span class="code">bets, betm, betl</span>
+						</div>
+						<div>
+								Distribute the contents of a row or column between
+						</div>
+					</div>
+					<div class="row-normal">
+						<div>
+							<span class="code">firs, firm, firl</span>
+						</div>
+						<div>
+								Reorder column as first
+						</div>
+					</div>
+					<div class="row-normal">
+						<div>
+							<span class="code">lass, lasm, lasl</span>
+						</div>
+						<div>
+								Reorder column as last
+						</div>
+					</div>
+					<div class="row-normal">
+						<div>
+							<span class="code">rev</span>
+						</div>
+						<div>
+								Reverse column order
+						</div>
+					</div>
+				</article>
+			</section>
+
+			<section id="s4">
+				<article>
+					<h1>Columns</h1>
+				</article>
+			</section>
+
+			<div class="example">
+				<div class="flu">
+					<div class="row">
+						<div class="col" s="12" m="12" l="12">
+							<div class="box">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col" s="1" m="1" l="1">
+							<div class="box">
+							</div>
+						</div>
+						<div class="col" s="11" m="11" l="11">
+							<div class="box">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col" s="2" m="2" l="2">
+							<div class="box">
+							</div>
+						</div>
+						<div class="col" s="10" m="10" l="10">
+							<div class="box">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col" s="3" m="3" l="3">
+							<div class="box">
+							</div>
+						</div>
+						<div class="col" s="9" m="9" l="9">
+							<div class="box">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col" s="4" m="4" l="4">
+							<div class="box">
+							</div>
+						</div>
+						<div class="col" s="8" m="8" l="8">
+							<div class="box">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col" s="5" m="5" l="5">
+							<div class="box">
+							</div>
+						</div>
+						<div class="col" s="7" m="7" l="7">
+							<div class="box">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col" s="6" m="6" l="6">
+							<div class="box">
+							</div>
+						</div>
+						<div class="col" s="6" m="6" l="6">
+							<div class="box">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section id="s5">
+				<article>
+					<h1>Offsets</h1>
+				</article>
+			</section>
+
+			<div class="example">
+				<div class="flu">
+					<div class="row">
+						<div class="col" s="1" m="1" l="1" so="11" mo="11" lo="11">
+							<div class="box">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col" s="2" m="2" l="2" so="10" mo="10" lo="10">
+							<div class="box">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col" s="3" m="3" l="3" so="9" mo="9" lo="9">
+							<div class="box">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col" s="4" m="4" l="4" so="8" mo="8" lo="8">
+							<div class="box">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col" s="5" m="5" l="5" so="7" mo="7" lo="7">
+							<div class="box">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col" s="6" m="6" l="6" so="6" mo="6" lo="6">
+							<div class="box">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col" s="7" m="7" l="7" so="5" mo="5" lo="5">
+							<div class="box">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col" s="8" m="8" l="8" so="4" mo="4" lo="4">
+							<div class="box">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col" s="9" m="9" l="9" so="3" mo="3" lo="3">
+							<div class="box">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col" s="10" m="10" l="10" so="2" mo="2" lo="2">
+							<div class="box">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col" s="11" m="11" l="11" so="1" mo="1" lo="1">
+							<div class="box">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section id="s6">
+				<article>
+					<h1>Align</h1>
+				</article>
+			</section>
+
+			<div class="example">
+				<div class="flu">
+					<div class="row sts">
+						<div class="col" s="6" m="6" l="6">
+							<div class="box">
+								Start
+							</div>
+						</div>
+					</div>
+					<div class="row ces">
+						<div class="col" s="6" m="6" l="6">
+							<div class="box">
+								Center
+							</div>
+						</div>
+					</div>
+					<div class="row ends">
+						<div class="col" s="6" m="6" l="6">
+							<div class="box">
+								End
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="example">
+				<div class="flu">
+					<div class="row tops">
+						<div class="col" s="6" m="6" l="6">
+							<div class="box large">
+							</div>
+						</div>
+						<div class="col" s="6" m="6" l="6">
+							<div class="box">
+								Top
+							</div>
+						</div>
+					</div>
+					<div class="row mids">
+						<div class="col" s="6" m="6" l="6">
+							<div class="box large">
+							</div>
+						</div>
+						<div class="col" s="6" m="6" l="6">
+							<div class="box">
+								Middle
+							</div>
+						</div>
+					</div>
+					<div class="row bots">
+						<div class="col" s="6" m="6" l="6">
+							<div class="box large">
+							</div>
+						</div>
+						<div class="col" s="6" m="6" l="6">
+							<div class="box">
+								Bottom
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section id="s7">
+				<article>
+					<h1>Distribution</h1>
+				</article>
+			</section>
+
+			<div class="example">
+				<div class="flu">
+					<div class="row aros">
+						<div class="col" s="2" m="2" l="2">
+							<div class="box">
+								Around
+							</div>
+						</div>
+						<div class="col" s="2" m="2" l="2">
+							<div class="box">
+								Around
+							</div>
+						</div>
+						<div class="col" s="2" m="2" l="2">
+							<div class="box">
+								Around
+							</div>
+						</div>
+					</div>
+					<div class="row bets">
+						<div class="col" s="2" m="2" l="2">
+							<div class="box">
+								Between
+							</div>
+						</div>
+						<div class="col" s="2" m="2" l="2">
+							<div class="box">
+								Between
+							</div>
+						</div>
+						<div class="col" s="2" m="2" l="2">
+							<div class="box">
+								Between
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section id="s8">
+				<article>
+					<h1>Reordering</h1>
+				</article>
+			</section>
+
+			<section id="s9">
+				<article>
+					<h2>First</h2>
+				</article>
+			</section>
+
+			<div class="example">
+				<div class="flu">
+					<div class="row">
+						<div class="col" s="2" m="2" l="2">
+							<div class="box">
+								1
+							</div>
+						</div>
+						<div class="col" s="2" m="2" l="2">
+							<div class="box">
+								2
+							</div>
+						</div>
+						<div class="col" s="2" m="2" l="2">
+							<div class="box">
+								3
+							</div>
+						</div>
+						<div class="col" s="2" m="2" l="2">
+							<div class="box">
+								4
+							</div>
+						</div>
+						<div class="col" s="2" m="2" l="2">
+							<div class="box">
+								5
+							</div>
+						</div>
+						<div class="col firs" s="2" m="2" l="2">
+							<div class="box">
+								6
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section id="s10">
+				<article>
+					<h2>Last</h2>
+				</article>
+			</section>
+
+			<div class="example">
+				<div class="flu">
+					<div class="row">
+						<div class="col lass" s="2" m="2" l="2">
+							<div class="box">
+								1
+							</div>
+						</div>
+						<div class="col" s="2" m="2" l="2">
+							<div class="box">
+								2
+							</div>
+						</div>
+						<div class="col" s="2" m="2" l="2">
+							<div class="box">
+								3
+							</div>
+						</div>
+						<div class="col" s="2" m="2" l="2">
+							<div class="box">
+								4
+							</div>
+						</div>
+						<div class="col" s="2" m="2" l="2">
+							<div class="box">
+								5
+							</div>
+						</div>
+						<div class="col" s="2" m="2" l="2">
+							<div class="box">
+								6
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section id="s11">
+				<article>
+					<h2>Reverse</h2>
+				</article>
+			</section>
+
+			<div class="example">
+				<div class="flu">
+					<div class="row rev">
+						<div class="col" s="2" m="2" l="2">
+							<div class="box">
+								1
+							</div>
+						</div>
+						<div class="col" s="2" m="2" l="2">
+							<div class="box">
+								2
+							</div>
+						</div>
+						<div class="col" s="2" m="2" l="2">
+							<div class="box">
+								3
+							</div>
+						</div>
+						<div class="col" s="2" m="2" l="2">
+							<div class="box">
+								4
+							</div>
+						</div>
+						<div class="col" s="2" m="2" l="2">
+							<div class="box">
+								5
+							</div>
+						</div>
+						<div class="col" s="2" m="2" l="2">
+							<div class="box">
+								6
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section id="s12">
+				<article>
+					<h1>License</h1>
+					<h2><a href="https://opensource.org/licenses/mit-license.html" title="MIT License">MIT License</a></h2>
+					<p>
+						Copyright 2017 <a href="http://kamilwebrer.pl" title="Kamil Weber">Kamil Weber</a>
+					</p>
+					<p>
+						Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+					</p>
+					<p>
+						The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+					</p>
+					<p>
+						THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+					</p>
+				</article>
+			</section>
+		</div>
+
+		<footer>
+			<div class="container">
+				<p>Antimatter<span>.css</span></p>
+			</div>
+		</footer>
+
+		<figure class="github-badge">
+			<a href="https://github.com/kWeb24/antimatter.css" title="GitHub">
+				<img src="assets/github-badge.png" alt="Github" />
+			</a>
+		</figure>
+
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+		<script>hljs.initHighlightingOnLoad();</script>
+	</body>
+</html>
