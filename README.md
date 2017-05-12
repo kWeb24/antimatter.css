@@ -5,7 +5,7 @@
 ### Hold my beer
 
 Antimatter is fully functional responsive flexbox grid and its only **877 bytes** mimified and gzipped!
-Compatible with: IE 11, Firefox 37+, Chrome 42+, Opera 29+, IE Mobile 11, Android Chrome 42+ and Android Firefix 37+!
+Compatible with: IE 11, Firefox 37+, Chrome 42+, Opera 29+, IE Mobile 11, Android Chrome 42+ and Android Firefox 37+!
 
 The fundamental difference between Antimatter.css and other frameworks is that you use attributes instead of classes to define columns.
 
