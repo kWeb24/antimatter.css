@@ -1,7 +1,8 @@
 # Antimatter.css
 
-##You can't create flexbox grid that will be less than 1kb
-###Hold my beer
+## You can't create flexbox grid that will be less than 1kb
+
+### Hold my beer
 
 Antimatter is fully functional responsive flexbox grid and its only **877 bytes** mimified and gzipped!
 Compatible with: IE 11, Firefox 37+, Chrome 42+, Opera 29+, IE Mobile 11, Android Chrome 42+ and Android Firefix 37+!
@@ -10,7 +11,7 @@ The fundamental difference between Antimatter.css and other frameworks is that y
 
 **For running exampels and documentation visit this page** [Antimatter.css docs and examples](http://kamilweber.pl/bundle/antimattercss/example/index.html)
 
-##All the necessary features in less than 1kb!
+## All the necessary features in less than 1kb!
 
 * 12 column flex grid
 * Offsets
@@ -22,19 +23,19 @@ The fundamental difference between Antimatter.css and other frameworks is that y
 * Box-sizing reset
 * Breakpoints: Small, Medium, Large
 
-##Attributes
+## Attributes
 
 * `s` - Number of columns. Small screens. Below 768px
 * `m` - Number of columns. Medium screens. 768px - 986px
 * `l` - Number of columns. Large screens. Above 968px
 
-##Offset
+## Offset
 
 * `so` - Number of columns. Small screens. Below 768px
 * `mo` - Number of columns. Medium screens. 768px - 986px
 * `lo` - Number of columns. Large screens. Above 968px
 
-##Classes (Small, Medium, Large)
+## Classes (Small, Medium, Large)
 
 * `flu` - Fluid container
 * `row` - Row
